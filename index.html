@@ -6,14 +6,17 @@
     <title>Javascript Coding Quiz</title>
 </head>
 <body>
-    <header>
-        <button>view high scores</button>
-        <h3 id="timer"></h3>
-    </header>
-    
     <main>
         <div class="container">
             <h1>Coding Quiz</h1>
+            <button id="highScores">View High Scores</button>
+            <div id="timer"> time: <span id="timeLeft">60</span> </div>
+            <div id="questionsContainer" style="display: none;"></div>
+            <button id ='startBtn'>Start</button>
+        </div>
+
+        <div id="quizEnd">
+            
         </div>
     </main>
     <script src="./assets/script/script.js"></script>
