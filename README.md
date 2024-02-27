@@ -26,9 +26,14 @@ THEN I can save my initials and score
 ## Links ##
 Link to repository: https://github.com/MarshPupp/API-code-quiz
 
-Link to deployed site:
+Link to deployed site: https://marshpupp.github.io/API-code-quiz/ 
 ## Deployed Images ##
-![Deployed quiz]()
+![start page](/assets/images/quiz-1.png)
+![quiz start](/assets/images/quiz-2.png)
+![quiz correct](/assets/images/quiz-3.png)
+![quiz incorrect](/assets/images/quiz-4.png)
+![quiz end](/assets/images/quiz-5.png)
+![high score](/assets/images/quiz-6.png)
 ## Acknowledgements ##
 * MDN docs were referenced (https://developer.mozilla.org/en-US/)
 * Chat GPT for Read Me format and help
