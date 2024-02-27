@@ -3,24 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Javascript Coding Quiz</title>
 </head>
 <body>
     <header>
-        <button id="highScores">View High Scores</button>
-        <div id="timer"> time: <span id="timeLeft">60</span> </div>
+        <button class="button"><a href="./highscore.html">View High Scores</a></button>
     </header>
     <main>
-        <div class="container">
-            <h1>Coding Quiz</h1>
-            <div id="questionsContainer" style="display: none;"></div>
-            <button id ='startBtn'>Start</button>
-        </div>
-
-        <div id="quizEnd">
-
+        <div class="quiz-container">
+            <h1 class="title">Coding Quiz</h1>
+            <button class="button"><a href="./quiz.html">Start Quiz</a></button>
         </div>
     </main>
-    <script src="./assets/script/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Javascript Coding Quiz</title>
+</head>
+<body>
+    <header>
+        <button class="left-button"><a href="./highscore.html">View High Scores</a></button>
+    </header>
+    <main>
+        <div class="quiz-container">
+            <div id="questions-container">
+                <h1 id="question-text"></h1>
+                <div id="answer-marker"></div>
+            </div>
+            <div id="result-container">
+                <p id="result-text"></p>
+            </div>
+        </div>
+        <div class="end-container" style="display: none;">
+            <h1>Your final score is:</h1>
+            <p id="score-text"
+            <h2>To save your score enter 3 letters here:</h2>
+            <input type="text" id="initials" placeholder="Enter here">
+            <button id="save-button">Save</button>
+        </div>
+        <button class="button" id="reset-button"><a href="./index.html">Reset</a></button>
+    </main>
+    <script src="./assets/script/script.js"></script>
+</body>
+</html>
