@@ -112,23 +112,7 @@ function saveScoreToLocal(score) {
     if (/^[A-Z]{3}$/.test(initialsInput)) {
         scores.push({ initials: initialsInput, score });
         localStorage.setItem('scores', JSON.stringify(scores));
-        console.log('saved');
     } else {
         console.log('Invalid initials. Please enter exactly 3 letters.');
     }
 }
-
-function displayScores() {
-    scores.sort((a,b) => b.score - a.score);
-
-    let tableHtml = '<table>';
-    tableHtml += '<tr><th>Rank</th><th>Initials</th><th>Score</th></tr>';
-    scores.forEach((entry, index) => {
-        tableHtml += `<tr><td>${index + 1}</td><td>${entry.initials}</td><td>${entry.score}</td></tr>`;
-    });
-    tableHtml += '</table>';
-
-    document.body.innerHTML = tableHtml;
-
-    scoresContainer.innerHTML = tableHtml;
-};
