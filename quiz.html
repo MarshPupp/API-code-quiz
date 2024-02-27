@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <button class="left-button"><a href="./highscore.html">View High Scores</a></button>
+        <button class="button"><a href="./highscore.html">View High Scores</a></button>
         <h2 id="timer"></h2>
     </header>
     <main>
@@ -24,11 +24,13 @@
         <div id="end-container" class="container" style="display: none;">
             <h1>Your final score is:</h1>
             <p id="score-text"
-            <h2>To save your score enter 3 letters here:</h2>
-            <input type="text" id="initials" placeholder="Enter here">
-            <button id="save-button">Save</button>
+            <form id="save-form">
+                <h2>To save your score enter 3 letters here:</h2>
+                <input type="text" id="initials" placeholder="Enter here">
+                <button id="save-button">Save</button>
+            </form>
         </div>
-        <button class="button" id="reset-button"><a href="./index.html">Reset</a></button>
+        <button class="button clearfix" id="reset-button"><a href="./index.html">Reset</a></button>
     </main>
     <script src="./assets/script/script.js"></script>
 </body>

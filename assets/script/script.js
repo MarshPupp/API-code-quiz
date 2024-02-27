@@ -30,6 +30,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 let timeLeft = 75;
 let timeInterval;
+let scores = JSON.parse(localStorage.getItem('scores')) || [];
 
 const timerEL = document.getElementById('timer');
 const quizContainer = document.getElementById('quiz-container');
@@ -42,7 +43,6 @@ const endContainer = document.getElementById('end-container');
 const scoreText = document.getElementById('score-text');
 const saveForm = document.getElementById('save-form');
 const saveBtn = document.getElementById('save-button');
-const scores = JSON.parse(localStorage.getItem('scores')) || [];
 const scoresContainer = document.getElementById('scores-container');
 
 window.onload = function() {
@@ -107,13 +107,14 @@ function endQuiz() {
 
 saveBtn.addEventListener('click', saveScoreToLocal);
 
-function saveScoreToLocal() {
+function saveScoreToLocal(score) {
     const initialsInput = document.getElementById('initials').value.trim().toUpperCase();
     if (/^[A-Z]{3}$/.test(initialsInput)) {
         scores.push({ initials: initialsInput, score });
         localStorage.setItem('scores', JSON.stringify(scores));
+        console.log('saved');
     } else {
-        console.log("Invalid initials. Please enter exactly 3 letters.");
+        console.log('Invalid initials. Please enter exactly 3 letters.');
     }
 }
 
